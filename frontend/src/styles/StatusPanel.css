@@ -1,0 +1,98 @@
+.status-panel {
+  min-height: 420px;
+}
+
+.status-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.status-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.status-label {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.status-pill.active {
+  background: rgba(34, 197, 94, 0.15);
+  color: #15803d;
+}
+
+.status-pill.inactive {
+  background: rgba(148, 163, 184, 0.2);
+  color: #475569;
+}
+
+.status-pill.neutral {
+  background: rgba(14, 165, 233, 0.12);
+  color: #0369a1;
+}
+
+.handle-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.handle-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  border: 1px dashed rgba(148, 163, 184, 0.4);
+  background: rgba(248, 250, 252, 0.7);
+}
+
+.handle-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-muted);
+}
+
+.handle-value {
+  font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.points-result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  background: rgba(249, 115, 22, 0.12);
+  border: 1px solid rgba(249, 115, 22, 0.3);
+}
+
+.points-label {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem;
+  color: var(--accent-deep);
+}
+
+.points-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent-deep);
+}

@@ -1,0 +1,56 @@
+.ticket-panel {
+  min-height: 420px;
+}
+
+.pick-section {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.pick-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.pick-label {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.ball-grid {
+  display: grid;
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.ball-button {
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.55rem 0;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ball-button:hover {
+  transform: translateY(-1px);
+  border-color: var(--accent);
+  box-shadow: 0 6px 16px rgba(249, 115, 22, 0.18);
+}
+
+.ball-button.selected {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent-deep);
+}
+
+@media (max-width: 720px) {
+  .ball-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
